@@ -1,0 +1,18 @@
+[features]
+seeds = false
+skip-lint = false
+[programs.devnet]
+solanainit = "9RPKdTnvGJb53Dn87mASUw2fRD6xM9XGr5faL66HR4jg"
+
+[test]
+startup_wait = 10000
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "/home/ajay/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
